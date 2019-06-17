@@ -370,19 +370,6 @@ body{
 
 /* cart.php   */
 
-#content #cart .table tbody tr td img{
-    width: 50px;
-}
-#content #cart .table tbody tr td input{
-    width: 40px;
-    text-align: right;
-}
-#content #cart .table tbody tr td{
-    vertical-align: middle;
-}
-#content #cart .table tfoot{
-    font-size: 18px;
-}
 .box .box-footer{
     background-color: #f7f7f7;
     margin: 30px -20px 20px;

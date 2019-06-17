@@ -140,12 +140,7 @@ if(isset($_GET['pro_id']))
             </li>
             <li><a href="../customer_register.php">Create Account</a>
             </li>
-            <li class="divider"></li>
-            <li><a href="../cart.php">Wishlist (5)</a>
-            </li>
-           
-            <li><a href="../checkout.php">Checkout</a>
-            </li>
+
           </ul>
         </li>
         <li class="dropdown">
@@ -255,14 +250,7 @@ if(isset($_GET['pro_id']))
       </form>
     </div>
     <!-- end col -->
-    <div class="col-sm-2 vertical-align header-items hidden-xs">
-      <div class="header-item mr-5">
-        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Wishlist"> <i class="fa fa-heart-o"></i> <sub>32</sub> </a>
-      </div>
-      <div class="header-item">
-        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare"> <i class="fa fa-refresh"></i> <sub>2</sub> </a>
-      </div>
-    </div>
+    
     <!-- end col -->
   </div>
   <!-- end  row -->
@@ -285,19 +273,13 @@ if(isset($_GET['pro_id']))
             <!-- Collect the nav links,  -->
             <div class="collapse navbar-collapse navbar-1" style="margin-top: 0px;">            
               <ul class="nav navbar-nav">
-                <li class="<?php if($active=='Home')   echo 'active'?>"><a href="index.php">Home</a></li>
-                  
-                <li class="dropdown megaDropMenu" class="<?php if($active=='Shop')   echo 'active'?>">                   <a href="shop.php" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false">Shop <i class="fa fa-angle-down ml-5"></i></a>
-                  <ul class="dropdown-menu row">
-                    <li class="col-sm-3 col-xs-12">
-                      <ul class="list-unstyled">
-                        <li>Categories</li>
-                        <li><a href="shop.php">Shop</a></li>
-                        <li><a href="#">Sidebar Left</a></li>
-                        <li><a href="#">Products Left</a></li>
-                     </ul>
-                    </li>
-                    <li class="col-sm-3 col-xs-12">
+                <li class="<?php if($active=='Home')   echo 'active'?>"><a href="../index.php">Home</a></li>
+                <li class="<?php if($active=='Shop')   echo 'active'?>">
+                  <a href="../shop.php" >Shop </a>
+                </li>
+               
+                 
+                    <!-- <li class="col-sm-3 col-xs-12">
                       <ul class="list-unstyled">
                         <li>Product Categories</li>
                         <li><a href="#"> Sidebar Left</a></li>
@@ -313,19 +295,10 @@ if(isset($_GET['pro_id']))
                         <li><a href="#">Products Left</a></li>
                         <li><a href="#">Products Sidebar</a></li>
                        </ul>
-                    </li>
-
-                    <li class="col-sm-3 col-xs-12">
-                      <ul class="list-unstyled">
-                        <li>Oroduct Categories</li>
-                        <li><a href="#"> Sidebar Left</a></li>
-                        <li><a href="#">Products Left</a></li>
-                        <li><a href="#">Products Sidebar</a></li>
-                       </ul>
-                    </li>
+                    </li> -->
                     
                     
-                  </ul>
+                  
                 </li>
                   
                 <li class="<?php if($active== 'My_Account') echo 'active' ?>">
@@ -334,7 +307,7 @@ if(isset($_GET['pro_id']))
                            
                            if(!isset($_SESSION['customer_email'])){
                                
-                               echo"<a href='checkout.php'>My Account</a>";
+                               echo"<a href=../'checkout.php'>My Account</a>";
                                
                            }else{
                                
@@ -346,14 +319,15 @@ if(isset($_GET['pro_id']))
                          </li>
 
                            
-                 <li class="<?php if($active=='Cart')   echo 'active'?>">
-                  <a href="cart.php" >Cart </a>
+                 
                   
                 </li>
                  <li class="<?php if($active=='Contact_Us')   echo 'active'?>">
-                  <a href="contact.php" >Contact Us </a>
+                  <a href="../contact.php" >Contact Us </a>
                   
                 </li>
+                <li class="<?php if($active=='Cart')   echo 'active'?>" style="float:right">
+                  <a href="../cart.php" >Cart </a>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div>

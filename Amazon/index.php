@@ -38,7 +38,7 @@ include('includes/header.php');
                        
                        <div class='item active'>
                        
-                       <img src='admin_area/slides_images/$slide_image'>
+                       <img src='admin-dashboard/slides_images/$slide_image'>
                        
                        </div>
                        
@@ -59,7 +59,7 @@ include('includes/header.php');
                        
                        <div class='item'>
                        
-                       <img src='admin_area/slides_images/$slide_image'>
+                       <img src='admin-dashboard/slides_images/$slide_image'>
                        
                        </div>
                        
@@ -163,14 +163,16 @@ include('includes/header.php');
             $product_img1 = $rowproduct['product_img1'];
             $product_img2 = $rowproduct['product_img2'];
             $pro_id = $rowproduct['product_id'];
+               $product_color = $rowproduct['product_color'];
+                $product_company = $rowproduct['product_company'];
 
         echo "  
         <div class='col-md-3 col-sm-6'>
             <div class='product-grid4'>
                 <div class='product-image4'>
                     <a href='#''>
-                        <img class='pic-1' src='admin_area/product_images/$product_img1'>
-                        <img class='pic-2' src='admin_area/product_images/$product_img2'>
+                        <img class='pic-1' src='admin-dashboard/product_images/$product_img1'>
+                        <img class='pic-2' src='admin-dashboard/product_images/$product_img2'>
                     </a>
                     <ul class='social'>
                         

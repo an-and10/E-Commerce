@@ -68,9 +68,10 @@ if(isset($_GET['pro_id']))
         
         <link rel="stylesheet" href="styles/csser/cssmain2.css">
         <link rel="stylesheet" href="styles/bootstrap-337.min.css">
-        <link rel="stylesheet" href=" styles/style.css"
+        <link rel="stylesheet" href=" styles/style.css">
+        <link rel="stylesheet" href=" styles/style2.css">
         <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="styles/products3.css">
+        <!-- <link rel="stylesheet" href="styles/products3.css"> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
                   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -131,12 +132,7 @@ if(isset($_GET['pro_id']))
             </li>
             <li><a href="customer_register.php">Create Account</a>
             </li>
-            <li class="divider"></li>
-            <li><a href="cart.php">Wishlist (5)</a>
-            </li>
-           
-            <li><a href="checkout.php">Checkout</a>
-            </li>
+            
           </ul>
         </li>
         <li class="dropdown">
@@ -215,7 +211,7 @@ if(isset($_GET['pro_id']))
     <div class="container">
   <div class="row display-table">
     <div class="col-sm-3 vertical-align text-left hidden-xs">
-      <a href="javascript:void(0);"> <img width="" src="https://lh3.googleusercontent.com/-r0Fhzz-so14/WNf9-4M65JI/AAAAAAAAD3E/ht6IhlL9gG4ujE2Hqiq70U3jBb6KQmaAQCL0B/w180-d-h43-p-rw/logo-2.png" alt=""></a>
+      <a href="javascript:void(0);"> <img width="" src="images/ecom-store-logo.png" alt=""></a>
     </div>
     <!-- end col -->
     <div class="col-sm-7 vertical-align text-center">

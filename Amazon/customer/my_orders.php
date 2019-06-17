@@ -30,7 +30,7 @@
                 <th> Qty: </th>
                 <th> Size: </th>
                 <th> Order Date:</th>
-                <th> Paid / Unpaid: </th>
+               
                 <th> Status: </th>
                 
             </tr><!--  tr Finish  -->

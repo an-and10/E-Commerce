@@ -43,7 +43,7 @@
                         
                         <div class="col-md-6"><!-- col-md-6 begin -->
                         
-                            <input name="product_category_title" type="text" class="form-control">
+                            <input name="product_category_title" type="text" class="form-control" required>
                         
                         </div><!-- col-md-6 finish -->
                     
@@ -105,7 +105,7 @@
                   
                   echo "<script>alert('Your New Product Category Has Been Added')</script>";
                   
-                  echo "<script>window.open('index.php?view_prpduct_category','_self')</script>";
+                  echo "<script>window.open('index.php?view_product_category','_self')</script>";
                   
               }
               

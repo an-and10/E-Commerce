@@ -27,16 +27,22 @@ if(isset($_GET['order_id'])){
 
         <div id="content">
             <div class="container">
-                <div class="col-md-12">  
-               <ul class="breadcrumb"><!-- breadcrumb Begin -->
-                   <li>
-                       <a href="../index.php">Home</a>
-                   </li>
-                   <li>
-                      My Account
-                   </li>
-               </ul><!-- breadcrumb Finish -->
-         </div>
+                <div class="row">
+     
+        <div class="btn-group btn-breadcrumb breadcrumb-primary">
+            <a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-home"></i></a>
+            <div class="visible-lg-block">
+            <div class="btn btn-warning btn-derecha"><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></div>
+            <div class="btn btn-default btn-derecha">Way to Go</div>
+          </div>
+            <a href="index.php" class="btn btn-primary visible-lg-block visible-md-block">Home</a>
+            <a href="shop.php" class="btn btn-primary visible-lg-block visible-md-block">Shop</a>
+            <a href="scart.php" class="btn btn-primary visible-lg-block visible-md-block active">My Account</a>
+            
+            <div class="btn btn-default visible-xs-block hidden-xs visible-sm-block ">...</div>
+           >
+        </div><br><br><br>
+  </div>
          <div class="col-md-3"><!-- col-md-3 Begin -->
    
    <?php 

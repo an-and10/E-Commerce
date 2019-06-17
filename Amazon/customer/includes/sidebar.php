@@ -35,7 +35,7 @@ if(isset($_SESSION['customer_email'])){
       <div class="profile-sidebar">
         <!-- SIDEBAR USERPIC -->
         <div class="profile-userpic">
-          <img src="customer_images/erika.jpg" class="img-responsive" alt="">
+          <img src="customer_images/<?php echo $customer_image ?>" class="img-responsive" alt="">
         </div>
         <!-- END SIDEBAR USERPIC -->
         <!-- SIDEBAR USER TITLE -->
@@ -50,8 +50,8 @@ if(isset($_SESSION['customer_email'])){
         <!-- END SIDEBAR USER TITLE -->
         <!-- SIDEBAR BUTTONS -->
         <div class="profile-userbuttons">
-          <button type="button" class="btn btn-success btn-sm">Follow</button>
-          <button type="button" class="btn btn-danger btn-sm">Message</button>
+          <button type="button" class="btn btn-success btn-sm">Complaint</button>
+          <button type="button" class="btn btn-danger btn-sm">OverView</button>
         </div>
         <!-- END SIDEBAR BUTTONS -->
         <!-- SIDEBAR MENU -->

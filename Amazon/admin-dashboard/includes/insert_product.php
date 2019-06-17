@@ -62,7 +62,7 @@ include("includes/db.php");
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
-                          <input name="product_title" type="text" class="form-control" required>
+                          <input name="product_title" type="text" class="form-control" required="">
                           
                       </div><!-- col-md-6 Finish -->
                        
@@ -74,7 +74,7 @@ include("includes/db.php");
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
-                          <select name="product_cat" class="form-control"><!-- form-control Begin -->
+                          <select name="product_cat" class="form-control" required=""><!-- form-control Begin -->
                               
                               <option> Select a Category Product </option>
                               
@@ -110,7 +110,7 @@ include("includes/db.php");
                       
                       <div class="col-md-6"><!-- col-md-6 Begin -->
                           
-                          <select name="cat" class="form-control"><!-- form-control Begin -->
+                          <select name="cat" class="form-control" required=""><!-- form-control Begin -->
                               
                               <option> Select a Category </option>
                               
@@ -186,7 +186,32 @@ include("includes/db.php");
                           
                       </div><!-- col-md-6 Finish -->
                        
-                   </div><!-- form-group Finish -->
+                   </div>
+
+                    <div class="form-group"><!-- form-group Begin -->
+                       
+                      <label class="col-md-3 control-label"> Product Company</label> 
+                      
+                      <div class="col-md-6"><!-- col-md-6 Begin -->
+                          
+                          <input name="product_company" type="text" class="form-control" required>
+                          
+                      </div><!-- col-md-6 Finish -->
+                       
+                   </div>
+                   <!-- form-group Finish -->
+                   <div class="form-group"><!-- form-group Begin -->
+                       
+                      <label class="col-md-3 control-label"> Product Colour</label> 
+                      
+                      <div class="col-md-6"><!-- col-md-6 Begin -->
+                          
+                          <input name="product_color" type="text" class="form-control" required>
+                          
+                      </div><!-- col-md-6 Finish -->
+                       
+                   </div>
+
                    
                    <div class="form-group"><!-- form-group Begin -->
                        
@@ -252,6 +277,8 @@ if(isset($_POST['submit'])){
     $product_price = $_POST['product_price'];
     $product_keywords = $_POST['product_keywords'];
     $product_desc = $_POST['product_desc'];
+    $product_color = $_POST['product_color'];
+    $product_company  = $_POST['product_company'];
     
     $product_img1 = $_FILES['product_img1']['name'];
     $product_img2 = $_FILES['product_img2']['name'];
@@ -265,14 +292,14 @@ if(isset($_POST['submit'])){
     move_uploaded_file($temp_name2,"product_images/$product_img2");
     move_uploaded_file($temp_name3,"product_images/$product_img3");
     
-    $insert_product = "insert into products (p_cat_id,cat_id,date,product_title,product_img1,product_img2,product_img3,product_price,product_keywords,product_desc) values ('$product_cat','$cat',NOW(),'$product_title','$product_img1','$product_img2','$product_img3','$product_price','$product_keywords','$product_desc')";
+    $insert_product = "insert into products (p_cat_id,cat_id,date,product_title,product_img1,product_img2,product_img3,product_price,product_keywords,product_desc,product_company,product_color) values ('$product_cat','$cat',NOW(),'$product_title','$product_img1','$product_img2','$product_img3','$product_price','$product_keywords','$product_desc','$product_company','$product_color')";
     
     $run_product = mysqli_query($con,$insert_product);
     
     if($run_product){
         
         echo "<script>alert('Product has been inserted sucessfully')</script>";
-        echo "<script>window.open('admin_area/includes/insert_product.php','_self')</script>";
+         echo "<script>window.open('index.php?insert_product','_self')</script>";
         
     }
     

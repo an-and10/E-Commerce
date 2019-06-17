@@ -42,7 +42,7 @@ $customer_image = $row_customer['customer_image'];
         
         <label> Costumer Email: </label>
         
-        <input type="text" name="c_email" class="form-control" value="<?php echo $customer_email; ?>" required>
+        <input type="text" name="c_email" class="form-control" value="<?php echo $customer_email; ?>" required disable>
         
     </div><!-- form-group Finish -->
     

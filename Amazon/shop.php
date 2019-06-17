@@ -29,13 +29,13 @@
      
         <div class="btn-group btn-breadcrumb breadcrumb-primary">
             <a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-home"></i></a>
-            <div class="visible-lg-block">
+            <div class="">
             <div class="btn btn-warning btn-derecha"><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i></div>
             <div class="btn btn-default btn-derecha">Way to Go</div>
           </div>
-            <a href="index.php" class="btn btn-primary visible-lg-block visible-md-block">Home</a>
-            <a href="shop.php" class="btn btn-primary visible-lg-block visible-md-block">Shop</a>
-            <a href="shop.php" class="btn btn-primary visible-lg-block visible-md-block active">Accessories</a>
+            <a href="index.php" class="btn btn-primary ">Home</a>
+            <a href="shop.php" class="btn btn-primary ">Shop</a>
+            <a href="shop.php" class="btn btn-primary active ">Accessories</a>
             
             <div class="btn btn-default visible-xs-block hidden-xs visible-sm-block ">...</div>
            >
@@ -109,6 +109,9 @@
 
                 $pro_desc = $row_products['product_desc'];
 
+                $product_color = $row_products['product_color'];
+
+                $product_company = $row_products['product_company'];
 
                 echo "
                    
@@ -116,8 +119,8 @@
             <div class='product-grid5'>
                 <div class='product-image5 rounded'>
                     <a href='details.php'>
-                        <img class='pic-1' src='admin_area/product_images/$pro_img1'>
-                        <img class='pic-2' src='admin_area/product_images/$pro_img2'>
+                        <img class='pic-1' src='admin-dashboard/product_images/$pro_img1'>
+                        <img class='pic-2' src='admin-dashboard/product_images/$pro_img2'>
                     </a>
                     <ul class='social'>
                        

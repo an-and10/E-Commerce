@@ -43,7 +43,7 @@
                         
                         <div class="col-md-6"><!-- col-md-6 begin -->
                         
-                            <input name="category_title" type="text" class="form-control">
+                            <input name="category_title" type="text" class="form-control" required="">
                         
                         </div><!-- col-md-6 finish -->
                     
@@ -105,7 +105,7 @@
                   
                   echo "<script>alert('Your New  Category Has Been Added')</script>";
                   
-                  echo "<script>window.open('index.php?view__category','_self')</script>";
+                  echo "<script>window.open('index.php?view_categories','_self')</script>";
                   
               }
               

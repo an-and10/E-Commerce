@@ -77,7 +77,8 @@
                        Upload Profile Picture<input type="file" name="admin_image">
               </span>
                   </div>
-                  
+                  <br>
+                  <br>
                 </div>
 
                 <button class="btn btn-primary btn-user btn-block" name="submit">

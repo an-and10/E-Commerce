@@ -42,15 +42,22 @@
                   <input type="password" class="form-control form-control-user" name="admin_pass" placeholder="Enter Password">
                 </div>
 
-                <div class="form-group ">
-                  <div class="col-sm-12 mb-6 mb-sm-0 btn btn-warning btn-file btn-block">
-                    
-                       Upload Profile Picture<input type="file" name="admin_image">
-              </span>
-                  </div>
+                <div class="form-group row">
                   
+                  <div class="col-sm-12">
+                    <input type="file" class="form-control btn-success" name="admin_image" placeholder="Upload Profile Picture">
+                  </div>
                 </div>
 
+               <!--  <div class="form-group ">
+                  <div class="col-sm-12 mb-6 mb-sm-0 btn btn-warning btn-file btn-block">
+                    
+                     <input type="file" name="admin_image">Upload Profile Pic
+              </span>
+                  </div>
+                 
+                </div> -->
+                 <br><br>
                 <button class="btn btn-primary btn-user btn-block" name="submit">
                   Register Account
                 </button>

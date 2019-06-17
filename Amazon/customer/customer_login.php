@@ -104,7 +104,7 @@
             
            echo "<script>alert('You are Logged in')</script>"; 
             
-           echo "<script>window.open('my_account?my_order.php','_self')</script>";
+           echo "<script>window.open('customer/my_account.php?my_orders','_self')</script>";
             
         }else{
             

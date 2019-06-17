@@ -118,6 +118,7 @@ function get_Product(){
         $product_keywords = $rowproduct['product_keywords'];
         $product_id = $rowproduct['product_id'];
         $product_img1 = $rowproduct['product_img1'];
+        $product_color = $rowproduct['product_color'];
 
         echo "
                  <div class='col-sm-3 col-sm-4 single'>
@@ -125,7 +126,7 @@ function get_Product(){
                <div class='product'>
                    <a href='details.php?product_id=$product_id'>
 
-                       <img class='img-responsive' src='admin_area/product_images/$product_img1' alt='$product_title'>
+                       <img class='img-responsive' src='admin-dashboard/product_images/$product_img1' alt='$product_title'>
 
                    </a>
 
